@@ -11,15 +11,6 @@ def create_files(entidade):
             garagem/models/{entidade}.py \
             garagem/serializers/{entidade}.py \
             garagem/views/{entidade}.py',
-        f'code \
-            garagem/models/{entidade}.py \
-            garagem/models/__init__.py \
-            garagem/admin.py \
-            garagem/serializers/{entidade}.py \
-            garagem/serializers/__init__.py \
-            garagem/views/{entidade}.py \
-            garagem/views/__init__.py \
-            app/urls.py',
     ]
 
     # Executa cada comando

@@ -7,10 +7,11 @@ from drf_spectacular.views import (
 )
 from rest_framework.routers import DefaultRouter
 
-from garagem.views import AcessorioViewSet
+from garagem.views import AcessorioViewSet, CorViewSet
 
 router = DefaultRouter()
 router.register(r'acessorios', AcessorioViewSet, basename='acessorio')
+router.register(r'cores', CorViewSet, basename='cor')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
