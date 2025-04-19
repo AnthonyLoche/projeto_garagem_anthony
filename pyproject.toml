@@ -1,7 +1,7 @@
 [project]
-name = "livraria"
+name = "garagem"
 version = "1.0.0"
-description = "Uma API REST de uma livraria feita com Django e Django REST Framework."
+description = "Uma API REST de uma garagem feita com Django e Django REST Framework."
 authors = [{ name = "Marco André Mendes", email = "marcoandre@gmail.com" }]
 dependencies = [
   'dj-database-url>=2.1.0',
@@ -32,9 +32,6 @@ license = { text = "MIT" }
 [tool.pdm]
 distribution = false
 
-[[tool.pdm.autoexport]]
-filename = "requirements.txt"
-without-hashes = "true"
 
 [tool.ruff]
 line-length = 120
@@ -55,7 +52,7 @@ dev = "python manage.py runserver 0.0.0.0:19003"
 createsuperuser = "python manage.py createsuperuser"
 pre_migrate = "python manage.py makemigrations"
 migrate = "python manage.py migrate"
-post_migrate = "python manage.py graph_models -S -g -o core.png core"
+post_migrate = "python manage.py graph_models -S -g -o garagem.png garagem"
 shell = "python manage.py shell"
 shellp = "python manage.py shell_plus"
 test = "python manage.py test"

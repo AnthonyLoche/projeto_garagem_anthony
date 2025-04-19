@@ -7,7 +7,10 @@ from drf_spectacular.views import (
 )
 from rest_framework.routers import DefaultRouter
 
+from garagem.views import AcessorioViewSet
+
 router = DefaultRouter()
+router.register(r'acessorios', AcessorioViewSet, basename='acessorio')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
